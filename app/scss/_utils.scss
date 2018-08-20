@@ -1,0 +1,35 @@
+//colors
+$white: #fff;
+$orange: #ec7f10;
+$black: #333;
+$lightBlue: #1cb4e0;
+$blue: #2292c7;
+$grey: #d8d8d8;
+$bgGrey: #fafafa;
+$titleColor: #40485a;
+$textColor: #6a707d;
+$linkColor: #00335f;
+$gradientBlue: linear-gradient(140deg, #08a9f2, #2292c7);
+$gradientBlueDark: linear-gradient(140deg, #007ec0, #31bbe3);
+$gradientBlueDarkReversed: linear-gradient(140deg, #31bbe3, #007ec0);
+
+$gradientBlueOp: linear-gradient(140deg, rgba(25, 109, 149, 0.8), rgba(34, 146, 199, 0.8));
+
+//fonts
+$montserrat: 'Montserrat', sans-serif;
+$roboto: 'Roboto', sans-serif;
+
+//classes
+.container {
+  margin: 0 auto;
+  max-width: 1220px;
+  padding: 0 15px;
+}
+
+body {
+  font-family: $roboto;
+}
+a{
+  font-family: inherit;
+  text-decoration: none;
+}

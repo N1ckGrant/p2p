@@ -1,0 +1,902 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>P2P_landing</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css"/>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
+
+
+    <link rel="stylesheet" href="css/libs.min.css">
+    <link rel="stylesheet" href="css/main.css">
+
+</head>
+
+<body>
+
+
+<section class="profile-page">
+    <!--mobile menu land-button-->
+    <div class="menu">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+    <!--mobile navigation-->
+    <div id="navigation" class="hidden">
+        <div class="mobile-nav">
+            <a href="#" class="nav__item nav__item--mobile">Инвестировать</a>
+            <a href="#" class="nav__item nav__item--mobile">Взять займ</a>
+            <a href="#" class="nav__item nav__item--mobile">О нас</a>
+            <a href="#" class="nav__item nav__item--mobile">Документы</a>
+            <a href="#" class="nav__item nav__item--mobile">Контакты</a>
+        </div>
+        <div class="toolbar-mobile">
+            <div class="login">
+                <a href="#" class="login__link sign-in">вход</a>
+            </div>
+        </div>
+    </div>
+    <section class="header-wrap">
+        <!--header-->
+        <header class="header container">
+            <!--logo-->
+            <a class="logo">
+                <div class="logo__img-wrap">
+                    <img src="assets/img/logo.png" class="logo__img"/>
+                </div>
+            </a>
+            <!--top navigation-->
+            <nav class="nav">
+                <a href="#" class="nav__item">Инвестировать</a>
+                <a href="#" class="nav__item">Взять займ</a>
+                <a href="#" class="nav__item">О нас</a>
+                <a href="#" class="nav__item">Документы</a>
+                <a href="#" class="nav__item">Контакты</a>
+            </nav>
+            <!--user registration and lang changing-->
+            <div class="toolbar">
+                <div class="login">
+                    <a href="#" class="land-button sign-in">вход</a>
+                </div>
+            </div>
+
+        </header>
+    </section>
+    <section class="profile-content-wrap">
+        <!--sidebar-->
+        <div class="profile-sidebar profile-bar-block profile-card profile-animate-left "
+             id="mySidebar ">
+            <div class="my_bar_box article">
+                <div class="my_sitebar_scroll" id="aside1">
+                    <div class="sidebar-user-bar">
+                        <div class="sidebar-user-bar-img-wrap">
+                            <img src="assets/img/profile-icon.png" alt="" class="sidebar-user-bar-img">
+                            <p class="sidebar-user-bar__name">Essie Howell</p>
+                        </div>
+
+                        <div class="sidebar-user-bar-icon">
+                            <i class="fa fa-pencil" aria-hidden="true"></i>
+                        </div>
+                    </div>
+
+                    <div class="profile-sidebar-links" id="aside1">
+                        <div class="sidebar-links">
+                            <div class="sidebar-links-item">
+                                <a class="sidebar-link" href="#">
+                                    <div class="sidebar-item-icon">
+                                        <i class="fa fa-th-large" aria-hidden="true"></i>
+                                    </div>
+                                    <div class="sidebar-item-link">Проекты</div>
+                                    <div class="arrow-icons">
+                                        <i class="fa fa-caret-down arrow-icons-up" aria-hidden="true"></i>
+                                        <i class="fa fa-caret-up arrow-icons-down" aria-hidden="true"></i>
+                                    </div>
+                                </a>
+                                <ul class="sub-links">
+                                    <li><a class="sub-links-link" href="#">Мои проекты</a></li>
+                                    <li><a class="sub-links-link" href="#">Все проекты</a></li>
+                                    <li><a class="sub-links-link" href="#">Создать проект</a></li>
+                                </ul>
+                            </div>
+
+                            <div class="sidebar-links-item">
+                                <a class="sidebar-link" href="#">
+                                    <div class="sidebar-item-icon">
+                                        <i class="fa fa-credit-card-alt" aria-hidden="true"></i>
+                                    </div>
+                                    <div class="sidebar-item-link">Мой счет</div>
+                                </a>
+                            </div>
+
+                            <div class="sidebar-links-item">
+                                <a class="sidebar-link" href="#">
+                                    <div class="sidebar-item-icon">
+                                        <i class="fa fa-tag" aria-hidden="true"></i>
+                                    </div>
+                                    <div class="sidebar-item-link">Предложения</div>
+                                </a>
+                            </div>
+
+                            <div class="sidebar-links-item">
+                                <a class="sidebar-link" href="#">
+                                    <div class="sidebar-item-icon">
+                                        <i class="fa fa-file-text" aria-hidden="true"></i>
+                                    </div>
+                                    <div class="sidebar-item-link">Договоры</div>
+                                </a>
+                            </div>
+
+                            <div class="sidebar-links-item">
+                                <a class="sidebar-link" href="#">
+                                    <div class="sidebar-item-icon">
+                                        <i class="fa fa-money" aria-hidden="true"></i>
+                                    </div>
+                                    <div class="sidebar-item-link">Кредит</div>
+                                </a>
+                            </div>
+                            <div class="sidebar-links-item">
+                                <a class="sidebar-link" href="#">
+                                    <div class="sidebar-item-icon">
+                                        <i class="fa fa-history" aria-hidden="true"></i>
+                                    </div>
+                                    <div class="sidebar-item-link">История</div>
+                                </a>
+                            </div>
+                            <div class="sidebar-links-item">
+                                <a class="sidebar-link" href="#">
+                                    <div class="sidebar-item-icon">
+                                        <i class="fa fa-tag" aria-hidden="true"></i>
+                                    </div>
+                                    <div class="sidebar-item-link">Уведомления<span class="notification-count">(3)</span></div>
+                                </a>
+                            </div>
+                            <div class="sidebar-links-item">
+                                <a class="sidebar-link" href="#">
+                                    <div class="sidebar-item-icon">
+                                        <i class="fa fa-user" aria-hidden="true"></i>
+                                    </div>
+                                    <div class="sidebar-item-link">Профиль</div>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="sidebar-links">
+                            <div class="sidebar-links-item">
+                                <a class="sidebar-link" href="#">
+                                    <div class="sidebar-item-icon">
+                                        <i class="fa fa-sign-out" aria-hidden="true"></i>
+                                    </div>
+                                    <div class="sidebar-item-link">Выход</div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <!--content-->
+        <div class="profile-content wrap_create_table" id="main">
+
+            <div class="profile-teal">
+
+
+                <div class="profile-top-bar">
+                    <div class="profile-container">
+                        <h1 class="profile-title">Создать заявку</h1>
+                    </div>
+                </div>
+                <div class="profile-tabs-content">
+                    <div id="personalData" class="city">
+                        <div class="caption_title">
+                            <h3>Создать заявку юр.лица</h3>
+                        </div>
+                        <div class="my_box_acordion">
+                            <form action="">
+                                <dl class="my_accordion">
+                                    <dt>1. Загальні відомості про позичальника</dt>
+                                    <dd>
+
+                                        <div class="box-body">
+                                            <table class="table table-bordered">
+                                                <tbody><tr>
+                                                    <td width="30%"><label for="legalinfoform-company_name">Назва підприємства</label></td>
+                                                    <td colspan="3"><input type="text" id="legalinfoform-company_name" name="LegalInfoForm[company_name]"></td>
+                                                </tr>
+                                                <tr>
+                                                    <td><label for="legalinfoform-kved">Основна сфера діяльності за КВЕД	</label></td>
+                                                    <td colspan="3"><input type="text" id="legalinfoform-kved" name="LegalInfoForm[kved]"></td>
+                                                </tr>
+                                                <tr>
+                                                    <td><label for="legalinfoform-edrpou">Код ЄДРПОУ</label></td>
+                                                    <td colspan="3"><input type="text" id="legalinfoform-edrpou" name="LegalInfoForm[edrpou]"></td>
+                                                </tr>
+                                                <tr>
+                                                    <td><label for="legalinfoform-enterprise_register">Орган реєстрації підприємства</label></td>
+                                                    <td colspan="3"><input type="text" id="legalinfoform-enterprise_register" name="LegalInfoForm[enterprise_register]"></td>
+                                                </tr>
+                                                <tr>
+                                                    <td><label for="legalinfoform-registration_date">Дата реєстрації</label></td>
+                                                    <td colspan="3"><input type="text" id="legalinfoform-registration_date" name="LegalInfoForm[registration_date]"></td>
+                                                </tr>
+                                                <tr>
+                                                    <td><label for="legalinfoform-registration_place">Місце реєстрації підприємства</label></td>
+                                                    <td colspan="3"><input type="text" id="legalinfoform-registration_place" name="LegalInfoForm[registration_place]"></td>
+                                                </tr>
+                                                <tr>
+                                                    <td><label for="legalinfoform-legal_address">Юридична адреса підприємства</label></td>
+                                                    <td colspan="3"><input type="text" id="legalinfoform-legal_address" name="LegalInfoForm[legal_address]"></td>
+                                                </tr>
+                                                <tr>
+                                                    <td><label for="legalinfoform-actual_address">Фактична адреса підприємства</label></td>
+                                                    <td colspan="3"><input type="text" id="legalinfoform-actual_address" name="LegalInfoForm[actual_address]"></td>
+                                                </tr>
+                                                <tr>
+                                                    <td><label for="legalinfoform-ownership">Форма власності</label></td>
+                                                    <td colspan="3"><input type="hidden" name="LegalInfoForm[ownership]" value=""><div id="legalinfoform-ownership"><label><input type="radio" name="LegalInfoForm[ownership]" value="1"> ПП</label>
+                                                        <label><input type="radio" name="LegalInfoForm[ownership]" value="2"> ТОВ</label></div></td>
+                                                </tr>
+                                                <tr>
+                                                    <td><label for="legalinfoform-constituent_doc">Тип установчого документу</label></td>
+                                                    <td colspan="3"><input type="text" id="legalinfoform-constituent_doc" name="LegalInfoForm[constituent_doc]"></td>
+                                                </tr>
+                                                <tr>
+                                                    <td><label for="legalinfoform-constituent_doc_date">- дата реєстрації установчого документу</label></td>
+                                                    <td colspan="3"><input type="text" id="legalinfoform-constituent_doc_date" name="LegalInfoForm[constituent_doc_date]"></td>
+                                                </tr>
+                                                <tr>
+                                                    <td><label for="legalinfoform-constituent_number">- номер запису установчого документу</label></td>
+                                                    <td colspan="3"><input type="text" id="legalinfoform-constituent_number" name="LegalInfoForm[constituent_number]"></td>
+                                                </tr>
+                                                <tr>
+                                                    <td><label for="legalinfoform-constituent_change_date">- дата останніх змін в установчих документах</label></td>
+                                                    <td colspan="3"><input type="text" id="legalinfoform-constituent_change_date" name="LegalInfoForm[constituent_change_date]"></td>
+                                                </tr>
+                                                <tr>
+                                                    <td><label for="legalinfoform-tax_status">Податковий статус</label></td>
+                                                    <td colspan="3"><input type="text" id="legalinfoform-tax_status" name="LegalInfoForm[tax_status]"></td>
+                                                </tr>
+                                                <tr>
+                                                    <td><label for="legalinfoform-experience">Стаж роботи (в даному бізнесі)</label></td>
+                                                    <td colspan="3"><input type="text" id="legalinfoform-experience" name="LegalInfoForm[experience]"></td>
+                                                </tr>
+                                                <tr>
+                                                    <td><label for="legalinfoform-seasonality">Сезонність виробництва</label></td>
+                                                    <td colspan="3"><input type="hidden" name="LegalInfoForm[seasonality]" value=""><div id="legalinfoform-seasonality"><label><input type="radio" name="LegalInfoForm[seasonality]" value="1"> Сезонний характер</label>
+                                                        <label><input type="radio" name="LegalInfoForm[seasonality]" value="2"> Несезонний характер</label></div></td>
+                                                </tr>
+                                                <tr>
+                                                    <td><label for="legalinfoform-decision_person">Особа або орган, що приймає рішення</label></td>
+                                                    <td colspan="3"><input type="text" id="legalinfoform-decision_person" name="LegalInfoForm[decision_person]"></td>
+                                                </tr>
+
+                                                </tbody></table>
+
+                                            <h4>Контактна особа</h4>
+
+                                            <table class="table table-bordered">
+                                                <tbody><tr>
+                                                    <th><label for="legalinfoform-contact">Контактна особа</label></th>
+                                                    <th><label for="legalinfoform-contact_relation">Відношення до клиента</label></th>
+                                                    <th><label for="legalinfoform-contact_phone">Телефон</label></th>
+                                                    <th><label for="legalinfoform-contact_email">E-mail</label></th>
+                                                </tr>
+                                                <tr>
+                                                    <td><input type="text" id="legalinfoform-contact" name="LegalInfoForm[contact]"></td>
+                                                    <td><input type="text" id="legalinfoform-contact_relation" name="LegalInfoForm[contact_relation]"></td>
+                                                    <td><input type="text" id="legalinfoform-contact_phone" name="LegalInfoForm[contact_phone]"></td>
+                                                    <td><input type="text" id="legalinfoform-contact_email" name="LegalInfoForm[contact_email]"></td>
+                                                </tr>
+                                                </tbody></table>
+                                        </div>
+
+                                    </dd>
+
+                                    <dt>2. Інформація про уповноваженого представника юридичної особи</dt>
+                                    <dd>
+
+                                        <div class="box-body">
+                                            <table class="table table-bordered">
+                                                <thead>
+                                                <tr>
+                                                    <th rowspan="2">Прізвище, ім'я, по-батькові</th>
+                                                    <th rowspan="2">Паспорт (серія та номер)</th>
+                                                    <th rowspan="2">ІПН</th>
+                                                    <th colspan="3">Документ, що засвідчує повноваження</th>
+                                                    <th colspan="3">Документ, що підтверджує призначення на посаду</th>
+                                                </tr>
+                                                <tr>
+                                                    <th>Назва документу</th>
+                                                    <th>Дата документу</th>
+                                                    <th>Номер документу</th>
+                                                    <th>Назва документу</th>
+                                                    <th>Дата документу</th>
+                                                    <th>Номер документу</th>
+                                                </tr>
+                                                </thead>
+                                                <tbody>
+                                                <tr>
+                                                    <td><input type="text" id="agentform-fio" name="AgentForm[fio]"></td>
+                                                    <td><input type="text" id="agentform-passport" name="AgentForm[passport]"></td>
+                                                    <td><input type="text" id="agentform-ipn" name="AgentForm[ipn]"></td>
+                                                    <td><input type="text" id="agentform-doc" name="AgentForm[doc]"></td>
+                                                    <td><input type="text" id="agentform-doc_date" name="AgentForm[doc_date]"></td>
+                                                    <td><input type="text" id="agentform-doc_number" name="AgentForm[doc_number]"></td>
+                                                    <td><input type="text" id="agentform-position_doc" name="AgentForm[position_doc]"></td>
+                                                    <td><input type="text" id="agentform-position_doc_date" name="AgentForm[position_doc_date]"></td>
+                                                    <td><input type="text" id="agentform-position_doc_number" name="AgentForm[position_doc_number]"></td>
+                                                </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+
+                                    </dd>
+
+                                    <dt>3. Предмет заявки</dt>
+                                    <dd>
+
+                                        <div class="box-body">
+
+                                            <table class="table table-bordered">
+                                                <tbody><tr>
+                                                    <td width="300px"><label for="subjectform-loan_target">Ціль отримання кредиту</label></td>
+                                                    <td colspan="3"><select id="subjectform-loan_target" name="SubjectForm[loan_target]">
+                                                        <option value="1">Поповнення обігових коштів</option>
+                                                        <option value="2">Купівля основних засобів</option>
+                                                    </select></td>
+                                                </tr>
+                                                <tr>
+                                                    <td><label for="subjectform-loan_type">Вид кредиту</label></td>
+                                                    <td colspan="3"><input type="text" id="subjectform-loan_type" name="SubjectForm[loan_type]"></td>
+                                                </tr>
+                                                <tr>
+                                                    <td><label for="subjectform-loan_amount">Сума кредиту, яку Ви бажаєте отримати	</label></td>
+                                                    <td><input type="text" id="subjectform-loan_amount" name="SubjectForm[loan_amount]"></td>
+                                                    <td><label for="subjectform-loan_currency">Валюта</label></td>
+                                                    <td><input type="text" id="subjectform-loan_currency" name="SubjectForm[loan_currency]"></td>
+                                                </tr>
+                                                <tr>
+                                                    <td><label for="subjectform-loan_month">Строк кредиту, міс</label></td>
+                                                    <td colspan="3"><input type="text" id="subjectform-loan_month" name="SubjectForm[loan_month]"></td>
+                                                </tr>
+                                                <tr>
+                                                    <td><label for="subjectform-loan_rate">Річна процентна ставка за користування кредитом</label></td>
+                                                    <td colspan="3"><input type="text" id="subjectform-loan_rate" name="SubjectForm[loan_rate]"></td>
+                                                </tr>
+                                                <tr>
+                                                    <td><label for="subjectform-loan_commission">Комісія за видачу кредиту</label></td>
+                                                    <td colspan="3"><input type="text" id="subjectform-loan_commission" name="SubjectForm[loan_commission]"></td>
+                                                </tr>
+                                                <tr>
+                                                    <td><label for="subjectform-prepaid">Перший внесок, авансовий платіж</label></td>
+                                                    <td colspan="3"><input type="text" id="subjectform-prepaid" name="SubjectForm[prepaid]"></td>
+                                                </tr>
+                                                <tr>
+                                                    <td rowspan="2"><label>Порука</label></td>
+                                                    <td><label for="subjectform-guarantor">П.І.Б/Назва підприємства</label></td>
+                                                    <td><label for="subjectform-guarantor_code">ІПН / ЄДРПОУ</label></td>
+                                                    <td><label for="subjectform-guarantor_type">Тип поручителя</label></td>
+                                                </tr>
+                                                <tr>
+                                                    <td><input type="text" id="subjectform-guarantor" name="SubjectForm[guarantor]"></td>
+                                                    <td><input type="text" id="subjectform-guarantor_code" name="SubjectForm[guarantor_code]"></td>
+                                                    <td><select id="subjectform-guarantor_type" name="SubjectForm[guarantor_type]">
+                                                        <option value="1">Имущественный</option>
+                                                        <option value="2">Финансовый</option>
+                                                    </select></td>
+                                                </tr>
+                                                <tr>
+                                                    <td><label for="subjectform-loan_payment">Спосіб погашення кредиту</label></td>
+                                                    <td><input type="text" id="subjectform-loan_payment" name="SubjectForm[loan_payment]"></td>
+                                                    <td><label for="subjectform-schedule_discharge">Опис графіку погашення</label></td>
+                                                    <td><input type="text" id="subjectform-schedule_discharge" name="SubjectForm[schedule_discharge]"></td>
+                                                </tr>
+                                                </tbody></table>
+                                        </div>
+
+                                    </dd>
+
+
+                                    <dt>4. Інформація про поточну діяльність підприємства (за останні три місяці):</dt>
+                                    <dd>
+
+                                        <div class="box-body">
+                                            <table class="table table-bordered" id="table-legal-activity">
+                                                <thead>
+                                                <tr><th></th>
+                                                    <th>Назва сфери діяльності</th>
+                                                    <th>Частка в загальному об'ємі реалізації, %</th>
+                                                    <th>Основні ринки реалізації</th>
+                                                </tr>
+                                                </thead>
+                                                <tbody>
+                                                <tr><td><i class="fa fa-trash table-delete-row"></i></td>
+                                                    <td>
+                                                        <input type="text" name="LegalActivityForm[items][0][name]">                            <input type="hidden" class="item-id" name="LegalActivityForm[items][0][id]">                        </td>
+                                                    <td><input type="text" name="LegalActivityForm[items][0][share]"></td>
+                                                    <td><input type="text" name="LegalActivityForm[items][0][markets]"></td>
+                                                </tr>
+                                                </tbody>
+                                            </table>
+
+                                            <div class="margin-top-10">
+                                                <button class="button button--blue" type="button" id="add-legal-activity">
+                                                    <i class="fa fa-plus"></i> Добавить
+                                                </button>
+                                            </div>
+                                        </div>
+
+                                    </dd>
+
+
+                                    <dt>5. Інформація про торгову націнку</dt>
+                                    <dd>
+
+                                        <div class="box-body">
+                                            <table class="table table-bordered" id="table-markup">
+                                                <thead>
+                                                <tr><th></th>
+                                                    <th>Товарна позиція</th>
+                                                    <th>Середня націнка, %</th>
+                                                    <th>Доля у загальному обсязі реалізації	</th>
+                                                </tr>
+                                                </thead>
+                                                <tbody>
+                                                <tr><td><i class="fa fa-trash table-delete-row"></i></td>
+                                                    <td>
+                                                        <input type="text" name="MarkupForm[items][0][name]">                            <input type="hidden" class="item-id" name="MarkupForm[items][0][id]">                        </td>
+                                                    <td><input type="text" name="MarkupForm[items][0][markup]"></td>
+                                                    <td><input type="text" name="MarkupForm[items][0][share]"></td>
+                                                </tr>
+                                                </tbody>
+                                            </table>
+
+                                            <div class="margin-top-10">
+                                                <button class="button button--blue" type="button" id="add-markup">
+                                                    <i class="fa fa-plus"></i> Добавить
+                                                </button>
+                                            </div>
+                                        </div>
+
+                                    </dd>
+
+
+                                    <dt>6. Інформація про дочірні підприємства, філії та представництва підприємства</dt>
+                                    <dd>
+
+                                        <div class="box-body">
+                                            <table class="table table-bordered" id="table-affiliate">
+                                                <thead>
+                                                <tr><th></th>
+                                                    <th>Назва</th>
+                                                    <th>Права на самостійні витрати</th>
+                                                    <th>Права на самостійні придбання</th>
+                                                </tr>
+                                                </thead>
+                                                <tbody>
+                                                <tr><td><i class="fa fa-trash table-delete-row"></i></td>
+                                                    <td>
+                                                        <input type="text" name="AffiliateForm[items][0][name]">                            <input type="hidden" class="item-id" name="AffiliateForm[items][0][id]">                        </td>
+                                                    <td><input type="text" name="AffiliateForm[items][0][expense_rights]"></td>
+                                                    <td><input type="text" name="AffiliateForm[items][0][purchase_rights]"></td>
+                                                </tr>
+                                                </tbody>
+                                            </table>
+
+                                            <div class="margin-top-10">
+                                                <button class="button button--blue" type="button" id="add-affiliate">
+                                                    <i class="fa fa-plus"></i> Добавить
+                                                </button>
+                                            </div>
+                                        </div>
+
+                                    </dd>
+
+                                    <dt>7. Зв'язки з іншими підприємствами та особами</dt>
+                                    <dd>
+
+                                        <div class="box-body">
+                                            <table class="table table-bordered" id="table-partner">
+                                                <thead>
+                                                <tr><th></th>
+                                                    <th>Найменування/П.І.Б</th>
+                                                    <th>ЄДРПОУ / ІПН</th>
+                                                    <th>Директор</th>
+                                                    <th>Адрес</th>
+                                                    <th>Телефон</th>
+                                                </tr>
+                                                </thead>
+                                                <tbody>
+                                                <tr><td><i class="fa fa-trash table-delete-row"></i></td>
+                                                    <td>
+                                                        <input type="text" name="PartnerForm[items][0][name]">                            <input type="hidden" class="item-id" name="PartnerForm[items][0][id]">                        </td>
+                                                    <td><input type="text" name="PartnerForm[items][0][code]"></td>
+                                                    <td><input type="text" name="PartnerForm[items][0][director]"></td>
+                                                    <td><input type="text" name="PartnerForm[items][0][address]"></td>
+                                                    <td><input type="text" name="PartnerForm[items][0][phone]"></td>
+                                                </tr>
+                                                </tbody>
+                                            </table>
+
+                                            <div class="margin-top-10">
+                                                <button class="button button--blue" type="button" id="add-partner">
+                                                    <i class="fa fa-plus"></i> Добавить
+                                                </button>
+                                            </div>
+                                        </div>
+
+                                    </dd>
+
+                                    <dt>8. Патенти, ліцензії та інші дозвільні документи</dt>
+                                    <dd>
+
+                                        <div class="box-body">
+                                            <table class="table table-bordered" id="table-patent">
+                                                <thead>
+                                                <tr><th></th>
+                                                    <th>Назва документу</th>
+                                                    <th>Номер документу</th>
+                                                    <th>Дата завершення дії</th>
+                                                    <th>Суть патенту/ліцензії/іншого дозвільного документу</th>
+                                                </tr>
+                                                </thead>
+                                                <tbody>
+                                                <tr><td><i class="fa fa-trash table-delete-row"></i></td>
+                                                    <td>
+                                                        <input type="text" name="PatentForm[items][0][name]">                            <input type="hidden" class="item-id" name="PatentForm[items][0][id]">                        </td>
+                                                    <td><input type="text" name="PatentForm[items][0][number]"></td>
+                                                    <td><input type="text" name="PatentForm[items][0][date_finish]"></td>
+                                                    <td><input type="text" name="PatentForm[items][0][description]"></td>
+                                                </tr>
+                                                </tbody>
+                                            </table>
+
+                                            <div class="margin-top-10">
+                                                <button class="button button--blue" type="button" id="add-patent">
+                                                    <i class="fa fa-plus"></i> Добавить
+                                                </button>
+                                            </div>
+                                        </div>
+
+                                    </dd>
+
+                                    <dt>9. Вкажіть відомості про активи ведення бізнесу (приміщення/обладнання)</dt>
+                                    <dd>
+
+                                        <div class="box-body">
+                                            <table class="table table-bordered" id="table-asset">
+                                                <thead>
+                                                <tr><th></th>
+                                                    <th>Призначення</th>
+                                                    <th>Адреса</th>
+                                                    <th>Площа</th>
+                                                    <th>Документ, що підтверджує право власності/користування</th>
+                                                    <th>Користувач приміщення</th>
+                                                    <th>Дата початку дії договору оренди</th>
+                                                    <th>Дата закінчення дії договору оренди</th>
+                                                    <th>Вартість оренди (дог.)</th>
+                                                    <th>Вартість оренди (факт.)</th>
+                                                    <th>Власник</th>
+                                                </tr>
+                                                </thead>
+                                                <tbody>
+                                                <tr><td><i class="fa fa-trash table-delete-row"></i></td>
+                                                    <td>
+                                                        <input type="text" name="AssetForm[items][0][appointment]">                            <input type="hidden" class="item-id" name="AssetForm[items][0][id]">                        </td>
+                                                    <td><input type="text" name="AssetForm[items][0][address]"></td>
+                                                    <td><input type="text" name="AssetForm[items][0][area]"></td>
+                                                    <td><input type="text" name="AssetForm[items][0][document]"></td>
+                                                    <td><input type="text" name="AssetForm[items][0][user]"></td>
+                                                    <td><input type="text" name="AssetForm[items][0][contract_start]"></td>
+                                                    <td><input type="text" name="AssetForm[items][0][contract_end]"></td>
+                                                    <td><input type="text" name="AssetForm[items][0][rent_doc]"></td>
+                                                    <td><input type="text" name="AssetForm[items][0][rent_actual]"></td>
+                                                    <td><input type="text" name="AssetForm[items][0][owner]"></td>
+                                                </tr>
+                                                </tbody>
+                                            </table>
+
+                                            <div class="margin-top-10">
+                                                <button class="button button--blue" type="button" id="add-asset">
+                                                    <i class="fa fa-plus"></i> Добавить
+                                                </button>
+                                            </div>
+                                        </div>
+
+                                    </dd>
+
+                                    <dt>10. Інформація про здавані в оренду площі</dt>
+                                    <dd>
+
+                                        <div class="box-body">
+                                            <table class="table table-bordered" id="table-rent-area">
+                                                <thead>
+                                                <tr><th></th>
+                                                    <th>Місце знаходження</th>
+                                                    <th>Власник</th>
+                                                    <th>Площа, кв.м.</th>
+                                                    <th>Строк дії оренди з дати</th>
+                                                    <th>Строк дії оренди по дату</th>
+                                                    <th>Орендар</th>
+                                                    <th>Вартість оренди (дог.)</th>
+                                                    <th>Вартість оренди (факт.)</th>
+                                                    <th>Придбані в кредит (Так/Ні)</th>
+                                                    <th>Використовується/не використовується</th>
+                                                </tr>
+                                                </thead>
+                                                <tbody>
+                                                <tr><td><i class="fa fa-trash table-delete-row"></i></td>
+                                                    <td>
+                                                        <input type="text" name="RentAreaForm[items][0][location]">                            <input type="hidden" class="item-id" name="RentAreaForm[items][0][id]">                        </td>
+                                                    <td><input type="text" name="RentAreaForm[items][0][owner]"></td>
+                                                    <td><input type="text" name="RentAreaForm[items][0][area]"></td>
+                                                    <td><input type="text" name="RentAreaForm[items][0][rent_from]"></td>
+                                                    <td><input type="text" name="RentAreaForm[items][0][rent_to]"></td>
+                                                    <td><input type="text" name="RentAreaForm[items][0][renter]"></td>
+                                                    <td><input type="text" name="RentAreaForm[items][0][rent_amount]"></td>
+                                                    <td><input type="text" name="RentAreaForm[items][0][rent_amount_actual]"></td>
+                                                    <td><div style="width: 100px"><label><input class="input_width_auto" type="radio" name="RentAreaForm[items][0][is_credit]" value="1"> Так</label>
+                                                        <label><input class="input_width_auto" type="radio" name="RentAreaForm[items][0][is_credit]" value="2"> Нi</label></div></td>
+                                                    <td><div><label><input class="input_width_auto" type="radio" name="RentAreaForm[items][0][is_used]" value="1"> Так</label>
+                                                        <label><input class="input_width_auto" type="radio" name="RentAreaForm[items][0][is_used]" value="2"> Нi</label></div></td>
+                                                </tr>
+                                                </tbody>
+                                            </table>
+
+                                            <div class="margin-top-10">
+                                                <button class="button button--blue" type="button" id="add-rent-area">
+                                                    <i class="fa fa-plus"></i> Добавить
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </dd>
+
+
+                                    <dt>11. Вкажіть інформацію про</dt>
+                                    <dd>
+
+                                        <div class="box-body">
+                                            <table class="table table-bordered">
+                                                <tbody><tr>
+                                                    <td width="30%"><label for="legalstatform-workers">Кількість зайнятих працівників в розрахунку на повний робочий день</label></td>
+                                                    <td><input type="text" id="legalstatform-workers" name="LegalStatForm[workers]"></td>
+                                                </tr>
+                                                <tr>
+                                                    <td><label for="legalstatform-fund_size">Розмір фонду заробітної плати</label></td>
+                                                    <td><input type="text" id="legalstatform-fund_size" name="LegalStatForm[fund_size]"></td>
+                                                </tr>
+                                                </tbody></table>
+                                        </div>
+                                    </dd>
+
+
+                                    <dt>12. Інформація про рахунки в банках (тис. грош. од.)</dt>
+                                    <dd>
+
+                                        <div class="box-body">
+                                            <table class="table table-bordered" id="table-legal-bill">
+                                                <thead>
+                                                <tr><th></th>
+                                                    <th>Назва банку</th>
+                                                    <th>МФО</th>
+                                                    <th>Номер рахунку</th>
+                                                    <th>Валюта</th>
+                                                </tr>
+                                                </thead>
+                                                <tbody>
+                                                <tr><td><i class="fa fa-trash table-delete-row"></i></td>
+                                                    <td>
+                                                        <input type="text" name="LegalBillForm[items][0][bank]">                            <input type="hidden" class="item-id" name="LegalBillForm[items][0][id]">                        </td>
+                                                    <td><input type="text" name="LegalBillForm[items][0][mfo]"></td>
+                                                    <td><input type="text" name="LegalBillForm[items][0][number]"></td>
+                                                    <td><input type="text" name="LegalBillForm[items][0][currency]"></td>
+                                                </tr>
+                                                </tbody>
+                                            </table>
+
+                                            <div class="margin-top-10">
+                                                <button class="button button--blue" type="button" id="add-legal-bill">
+                                                    <i class="fa fa-plus"></i> Добавить
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </dd>
+
+                                    <dt>13. Грошові надходження (тис. грош. од.)</dt>
+                                    <dd>
+
+                                        <div class="box-body">
+                                            <table class="table table-bordered" id="table-income">
+                                                <thead>
+                                                <tr><th></th>
+                                                    <th>Валюта</th>
+                                                    <th>Частка</th>
+                                                </tr>
+                                                </thead>
+                                                <tbody>
+                                                <tr><td><i class="fa fa-trash table-delete-row"></i></td>
+                                                    <td>
+                                                        <input type="text" name="IncomeForm[items][0][currency]">                            <input type="hidden" class="item-id" name="IncomeForm[items][0][id]">                        </td>
+                                                    <td><input type="text" name="IncomeForm[items][0][value]"></td>
+                                                </tr>
+                                                </tbody>
+                                            </table>
+
+                                            <div class="margin-top-10">
+                                                <button class="button button--blue" type="button" id="add-income">
+                                                    <i class="fa fa-plus"></i> Добавить
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </dd>
+
+
+                                    <dt>14. Інші запитання</dt>
+                                    <dd>
+
+                                        <div class="box-body">
+
+                                            <table class="table table-bordered">
+                                                <tbody><tr>
+                                                    <td>
+                                                        <label for="questionform-arrears_payment">Чи є заборгованість по сплаті комунальних платежів?</label>                        <div>Тут вказати №, дату відповідного документу</div>                    </td>
+                                                    <td><input type="text" id="questionform-arrears_payment" name="QuestionForm[arrears_payment]"></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <label for="questionform-pledge">Чи є укладений договір аренди(найму) на предмет застави/іпотеки?</label>                        <div>Тут вказати №, дату відповідного документу</div>                    </td>
+                                                    <td><input type="text" id="questionform-pledge" name="QuestionForm[pledge]"></td>
+                                                </tr>
+                                                <tr>
+                                                    <td><label for="questionform-redevelopment">Чи наявні в предметі заставі/іпотеки перепланування, що потребують узаконення?</label></td>
+                                                    <td><input type="text" id="questionform-redevelopment" name="QuestionForm[redevelopment]"></td>
+                                                </tr>
+                                                </tbody></table>
+                                        </div>
+                                    </dd>
+
+                                </dl>
+                                <button type="submit" class="button button--blue">Сохранить</button></div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+</section>
+
+
+
+
+<footer class="footer-wrap">
+    <div class="container">
+        <div class="footer">
+            <div class="footer-block footer-block--logo">
+                <!--logo-->
+                <a class="logo">
+                    <div class="logo__img-wrap">
+                        <img src="assets/img/logo.png" class="logo__img"/>
+                    </div>
+                </a>
+                <p class="footer-block__text">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+                    labore et
+                    dolore magna Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                    incididunt ut
+                    labore et dolore magna
+                </p>
+            </div>
+            <div class="footer-block footer-block--list">
+                <ul class="footer-block__list">
+                    <li class="footer-block__list-item">Главная</li>
+                    <li class="footer-block__list-item">Проекты</li>
+                    <li class="footer-block__list-item">Инвестировать</li>
+                    <li class="footer-block__list-item">Взять кредит</li>
+                    <li class="footer-block__list-item">Новости</li>
+                    <li class="footer-block__list-item">FAQ</li>
+                </ul>
+            </div>
+            <div class="footer-block footer-block--list">
+                <ul class="footer-block__list">
+                    <li class="footer-block__list-item">Документы</li>
+                    <li class="footer-block__list-item">Отзывы</li>
+                    <li class="footer-block__list-item">О компании</li>
+                    <li class="footer-block__list-item">Как это работает?</li>
+                    <li class="footer-block__list-item">Преимущества</li>
+                    <li class="footer-block__list-item">Контакты</li>
+                </ul>
+            </div>
+            <div class="footer-block footer-block--contacts">
+                <address class="">
+                    <p class="footer-block__contact">Контакты</p>
+                    <p class="footer-block__contact">Email: Infomail@gmail.com</p>
+                    <p class="footer-block__contact">Тел. 0800 888 99 88</p>
+                    <p class="footer-block__contact">Киев. Ул. Дом</p>
+                </address>
+                <ul class="socials">
+                    <li class="socials__item"><i class="fa fa-twitter" aria-hidden="true"></i></li>
+                    <li class="socials__item"><i class="fa fa-instagram" aria-hidden="true"></i></li>
+                    <li class="socials__item"><i class="fa fa-facebook" aria-hidden="true"></i></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p class="copyright-text">Cоpyright 2018</p>
+    </div>
+</footer>
+</section>
+
+
+
+
+<script src="https://cdn.jsdelivr.net/scrollreveal.js/3.3.1/scrollreveal.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js"></script>
+<script src="https://cdn.jsdelivr.net/parallax.js/1.4.2/parallax.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.js"></script>
+<script src="js/libs.min.js"></script>
+<script src="js/common.js"></script>
+<script src="js/myscript.js"></script>
+<script>
+    var sidebarStatus = 'closed';
+    var selectedNode;
+
+    function profile_open() {
+        // document.getElementById("main").style.marginLeft = "25%";
+        document.getElementsByClassName("profile-bar-item")[0].style.display = "block";
+        document.getElementById("mySidebar").style.width = "20%";
+        document.getElementById("mySidebar").classList.add('active');
+        document.getElementById("mySidebar").style.display = "flex";
+        document.getElementById("openNav").style.display = 'none';
+        sidebarStatus = 'opened';
+    }
+
+    function profile_close() {
+        document.getElementsByClassName("profile-bar-item")[0].style.display = "none";
+        // document.getElementById("main").style.marginLeft = "0%";
+        document.getElementById("mySidebar").style.width = "60px";
+        document.getElementById("mySidebar").classList.remove('active');
+        document.getElementById("mySidebar").style.display = "flex";
+        document.getElementById("openNav").style.display = "block";
+        sidebarStatus = 'closed';
+        if (selectedNode) {
+            selectedNode.removeClass('selected')
+        }
+    }
+
+
+
+    function openCity(cityName) {
+        var i;
+        var x = document.getElementsByClassName("city");
+        for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";
+        }
+        document.getElementById(cityName).style.display = "block";
+    }
+
+
+    function openModal(){
+        $("#ex1").modal({
+            closeClass: 'icon-remove',
+            closeText: '<i class="fa fa-close" aria-hidden="true"></i>'
+        });
+    }
+</script>
+</body>
+
+</html>

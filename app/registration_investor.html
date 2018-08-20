@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>P2P_landing</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css"/>
+
+
+    <link rel="stylesheet" href="css/libs.min.css">
+    <link rel="stylesheet" href="css/main.css">
+
+</head>
+
+<body>
+
+<section class="s-login-content">
+    <form class="s-login-investor">
+        <div class="login-header">
+            <!--&lt;!&ndash;logo&ndash;&gt;-->
+            <!--<a class="logo login-logo">-->
+            <!--<img src="img/logo-black.png" class="logo__img login-logo__img"/>-->
+            <!--</a>-->
+            <!--logo-->
+            <a class="logo-triangles">
+                <img src="assets/img/triangle-black.png" class="logo-triangles-img__1"/>
+                <img src="assets/img/triangle-black.png" class="logo-triangles-img__2"/>
+                <img src="assets/img/triangle-black.png" class="logo-triangles-img__3"/>
+            </a>
+            <h2 class="login-header-title">Регистрация инвестора</h2>
+        </div>
+        <div class="invest-regist">
+            <div class="inputs-wrap">
+                <div class="reg-input-wrap reg-input--require">
+                    <input type="text" class="reg-input" placeholder="Фамилия">
+                </div>
+                <div class="reg-input-wrap reg-input--require">
+                    <input type="text" class="reg-input reg-input--password" placeholder="Отчество">
+                </div>
+                <div class="reg-input-wrap">
+                    <input type="text" class="reg-input" placeholder="Email">
+                </div>
+            </div>
+            <div class="inputs-wrap">
+                <div class="reg-input-wrap reg-input--require">
+                    <input type="text" class="reg-input" placeholder="Имя">
+                </div>
+                <div class="reg-input-wrap">
+                    <input type="text" id="datepicker" class="reg-input reg-input--password" placeholder="Дата рождения">
+                    <i class="fa fa-calendar" aria-hidden="true"></i>
+                </div>
+                <div class="reg-input-wrap">
+                    <input type="text" class="reg-input" placeholder="Телефон +38 ___ __ __">
+                </div>
+            </div>
+        </div>
+        <div class="profile-title-error">Пароли не совпадают</div>
+        <div class="invest-regist">
+            <div class="inputs-wrap">
+                <div class="reg-input-wrap reg-input-wrap--margin reg-input--require">
+                    <input type="password" class="reg-input reg-input--password" placeholder="Повторите пароль">
+                    <i class="fa fa-eye-slash" aria-hidden="true"></i>
+                </div>
+
+            </div>
+            <div class="inputs-wrap">
+                <div class="reg-input-wrap reg-input-wrap--margin reg-input--require">
+                    <input type="password" class="reg-input reg-input--password" placeholder="Придумайте пароль">
+                    <i class="fa fa-eye-slash" aria-hidden="true"></i>
+                </div>
+            </div>
+        </div>
+        <p class="terms">
+            Нажимая кнопку "Зарегистрироваться" я подтверждаю ознкомление с <br> Правилами и условиями и <a href="#">Политикой конфиденциальности</a><br>  настоящей платформы
+        </p>
+        <div class="buttons buttons--padding">
+            <a href="" class="button button--blue button--block">Зарегистрироваться</a>
+        </div>
+    </form>
+</section>
+<footer class="auth-footer">
+    <ul class="auth-footer-list">
+        <li class="auth-footer-list__item"><a href="#" class="auth-footer-list__link">Главная</a></li>
+        <li class="auth-footer-list__item"><a href="" class="auth-footer-list__link">Регистрация</a></li>
+        <li class="auth-footer-list__item"><a href="" class="auth-footer-list__link">Восстановить пароль</a></li>
+    </ul>
+</footer>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/scrollreveal.js/3.3.1/scrollreveal.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<script src="https://cdn.jsdelivr.net/parallax.js/1.4.2/parallax.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.js"></script>
+<script>
+    $("#datepicker").datepicker({
+        inline: true,
+        changeYear: true,
+        changeMonth: true
+    });
+
+    jQuery(function ($) {
+        $.datepicker.regional['ru'] = {
+            closeText: 'Закрыть',
+            prevText: '<i class="fa fa-angle-left" aria-hidden="true"></i>',
+            nextText: '<i class="fa fa-angle-right" aria-hidden="true"></i>',
+            currentText: 'Сегодня',
+            monthNames: ['Январь', 'Февраль', 'Март', 'Апрель', 'Май', 'Июнь',
+                'Июль', 'Август', 'Сентябрь', 'Октябрь', 'Ноябрь', 'Декабрь'],
+            monthNamesShort: ['Январь', 'Февраль', 'Март', 'Апрель', 'Май', 'Июнь',
+                'Июль', 'Август', 'Сентябрь', 'Октябрь', 'Ноябрь', 'Декабрь'],
+            dayNames: ['воскресенье', 'понедельник', 'вторник', 'среда', 'четверг', 'пятница', 'суббота'],
+            dayNamesShort: ['вск', 'пнд', 'втр', 'срд', 'чтв', 'птн', 'сбт'],
+            dayNamesMin: ['Вс', 'Пн', 'Вт', 'Ср', 'Чт', 'Пт', 'Сб'],
+            weekHeader: 'Нед',
+            dateFormat: 'dd.mm.yy',
+            firstDay: 1,
+            isRTL: false,
+            showMonthAfterYear: false,
+            yearSuffix: ''
+        };
+        $.datepicker.setDefaults($.datepicker.regional['ru']);
+    });
+</script>
+<script src="js/libs.min.js"></script>
+<script src="js/common.js"></script>
+
+</body>
+
+</html>

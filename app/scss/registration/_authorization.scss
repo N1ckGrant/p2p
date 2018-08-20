@@ -1,0 +1,412 @@
+.s-login-content {
+  box-shadow: 0 0 6px 3px rgba(0, 0, 0, 0.2);
+  background: $white;
+  background-image: url("../../assets/img/registration-bg.png");
+  background-size: 200% 200%;
+  -webkit-animation: Gradient 15s ease infinite;
+  -moz-animation: Gradient 15s ease infinite;
+  animation: Gradient 15s ease infinite;
+  min-height: 630px;
+  height: calc(100vh - 60px);
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: 0%;
+  padding-top: 15px;
+}
+@media screen and(max-width: 768px) {
+  .s-login-content{
+    height: auto;
+  }
+}
+
+.s-login {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: center;
+  max-width: 350px;
+  width: 100%;
+  padding: 0 10px;
+  &__text {
+    font-size: 12px;
+    color: $textColor;
+    text-align: center;
+    &--margin {
+      margin: 20px 0;
+    }
+  }
+}
+
+.s-login-investor {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-width: 700px;
+  width: 100%;
+  padding: 0 10px;
+  & .buttons {
+    width: 100%;
+    max-width: 350px;
+    margin: 0 auto;
+  }
+}
+
+.invest-regist {
+  width: 100%;
+  @include row-flex();
+  & .inputs-wrap {
+    @include col();
+    @include size(6);
+    @include size-md(6);
+    @include size-xs(12);
+  }
+}
+
+.login {
+  &-logo {
+  }
+  &-logo__img {
+    margin: 0 auto;
+  }
+  &-header {
+    text-align: center;
+    &-title {
+      margin: 15px 0 20px;
+      font-size: 2.8rem;
+      color: $titleColor;
+      font-weight: 100;
+    }
+  }
+}
+
+.inputs-wrap {
+  display: block;
+  width: 100%;
+  &--flex {
+    display: flex;
+  }
+}
+
+.label {
+  display: inline-block;
+  font-size: 16px;
+  font-weight: 400;
+  color: $titleColor;
+  margin-bottom: 10px;
+  position: relative;
+  &--require:after {
+    content: '*';
+    color: red;
+    position: absolute;
+    font-size: 14px;
+    top: calc(50% - 7px);
+    right: -15px;
+  }
+}
+
+.input {
+  border: 0;
+  margin: 0;
+  display: block;
+  width: 100%;
+  padding: 8px 8px;
+  border: 1px solid $grey;
+  border-radius: 3px;
+  margin-bottom: 10px;
+  background: $white;
+  font-size: 13px;
+  font-weight: 100;
+  color: $textColor;
+  outline: none;
+  transition: 0.5s;
+  &-wrap {
+    width: 100%;
+  }
+  &-error {
+    border: 1px solid red;
+  }
+  &::placeholder {
+    transition: 0.5s;
+    color: $textColor;
+  }
+  &:focus {
+    border: 1px solid $blue;
+  }
+  &:focus::placeholder {
+    opacity: 0.4;
+  }
+}
+
+.search-wrap{
+display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 300px;
+}
+
+.input.search{
+  border-radius: 0;
+  border-top-left-radius: 17px;
+  border-bottom-left-radius: 17px;
+  margin: 0;
+  padding-left: 15px;
+}
+
+.button.search{
+  padding: 8px 20px;
+  font-size: 16px;
+  margin: 0;
+  margin-left: -15px;
+  border-radius: 17px;
+}
+
+.mr-15px {
+  margin-right: 15px;
+}
+
+.mt-15px {
+  margin-top: 15px;
+}
+
+.textarea {
+  border: 0;
+  margin: 0;
+  display: block;
+  width: 100%;
+  padding: 8px 8px;
+  border: 1px solid $grey;
+  border-radius: 3px;
+  margin-bottom: 10px;
+  background: $white;
+  font-size: 13px;
+  font-weight: 100;
+  color: $textColor;
+  outline: none;
+  transition: 0.5s;
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.2) inset;
+  &-wrap {
+    width: 100%;
+  }
+  &-error {
+    border: 1px solid red;
+  }
+  &::placeholder {
+    transition: 0.5s;
+    color: $textColor;
+  }
+  &:focus {
+    border: 1px solid $blue;
+  }
+  &:focus::placeholder {
+    opacity: 0.4;
+  }
+}
+
+.reg-input {
+  border: 0;
+  margin: 0;
+  display: block;
+  width: 100%;
+  padding: 6px 0;
+  border-bottom: 1px solid $titleColor;
+  margin-bottom: 10px;
+  background: none;
+  font-size: 13px;
+  font-weight: 100;
+  color: $textColor;
+  outline: none;
+  transition: 0.5s;
+  &-error {
+    border-bottom: 1px solid red;
+  }
+  &::placeholder {
+    transition: 0.5s;
+    color: $textColor;
+  }
+  &:focus {
+    border-bottom: 1px solid $blue;
+  }
+  &:focus::placeholder {
+    opacity: 0.4;
+  }
+  &--require:after {
+    content: '*';
+    color: red;
+    position: absolute;
+    font-size: 14px;
+    top: calc(50% - 7px);
+    right: -7px;
+  }
+  &-wrap {
+    position: relative;
+    width: 100%;
+    &--margin {
+      margin-top: 30px;
+    }
+    & i {
+      position: absolute;
+      font-size: 14px;
+      color: $blue;
+      top: calc(50% - 7px);
+      right: 10px;
+    }
+  }
+}
+
+.help {
+  display: flex;
+  margin-top: 15px;
+  &--flex-end {
+    justify-content: flex-end;
+  }
+  &-link {
+    font-size: 12px;
+    text-decoration: underline;
+    font-weight: 100;
+    color: $linkColor;
+    transition: 0.5s;
+    &:hover {
+      color: $blue;
+    }
+  }
+}
+
+.auth-footer {
+  background: $white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0.8;
+
+  &-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &__link {
+      display: block;
+      padding: 22px 20px;
+      font-size: 16px;
+      font-weight: 300;
+      color: $blue;
+      transition: 0.5s;
+      opacity: 0.8;
+      text-align: center;
+      &:hover {
+        background: $grey;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .auth-footer-list__link {
+    font-size: 13px;
+  }
+}
+
+.logo-triangles {
+  position: relative;
+  display: block;
+  width: 100px;
+  height: 90px;
+  margin: 0 auto;
+  &-auth {
+    width: 100px;
+    height: 90px;
+    margin: 0 auto;
+  }
+  &-header {
+    width: 40px;
+    height: 50px;
+    & path {
+      fill: $white;
+    }
+  }
+  &-img {
+    &__1 {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      transform: translate(0%, -25%);
+      animation: triangle1 10s infinite;
+      animation-delay: 0.8s;
+    }
+    &__2 {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      transform: translate(20%, -13%);
+      animation: triangle2 10s infinite;
+      animation-delay: 0.4s;
+    }
+    &__3 {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      transform: translate(0%, 0%);
+      animation: triangle3 10s infinite;
+      animation-delay: 0s;
+    }
+  }
+}
+
+@keyframes triangle1 {
+  0% {
+    transform: translate(0%, -25%);
+  }
+  10% {
+    transform: translate(20%, -25%);
+  }
+  50% {
+    transform: translate(20%, -25%);
+  }
+  60% {
+    transform: translate(0%, -25%);
+  }
+}
+
+@keyframes triangle2 {
+  0% {
+    transform: translate(20%, -13%);
+  }
+  10% {
+    transform: translate(0%, -13%);
+  }
+  50% {
+    transform: translate(0%, -13%);
+  }
+  60% {
+    transform: translate(20%, -13%);
+  }
+}
+
+@keyframes triangle3 {
+  0% {
+    transform: translate(0%, 0%);
+  }
+  10% {
+    transform: translate(20%, 0%);
+  }
+  50% {
+    transform: translate(20%, 0%);
+  }
+  60% {
+    transform: translate(0%, 0%);
+  }
+}
+
+.success-icon {
+  display: block;
+  width: 100%;
+  height: auto;
+  &-wrap {
+    width: 50px;
+    margin: 0 auto;
+  }
+}
+

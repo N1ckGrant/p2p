@@ -1,0 +1,313 @@
+
+.land-button {
+  position: relative;
+  margin: 0 15px;
+  text-align: center;
+  display: block;
+  border: 1px solid $white;
+  border-radius: 33px;
+  color: $white;
+  font-family: $roboto;
+  font-size: 20px;
+  font-weight: 100;
+  overflow: hidden;
+  padding: 20px 40px;
+  text-decoration: none;
+  transition: 0.2s -webkit-transform ease-in-out;
+  transition: 0.2s transform ease-in-out;
+  transition: 0.4s transform ease-in-out, 0.4s -webkit-transform ease-in-out;
+  will-change: transform;
+  &.sign-in {
+    padding: 10px 20px;
+    font-size: 16px;
+  }
+  &--blue {
+    border: 1px solid $blue;
+    background: $gradientBlueDark;
+    &:hover {
+
+      color: $blue;
+      will-change: transform;
+
+    }
+  }
+  &--on-white {
+    &:hover {
+      //border: 1px solid $blue !important;
+      color: $blue !important;
+      //background: $gradientBlueDark !important;
+    }
+  }
+}
+
+.land-button::after {
+  background-color: $white;
+  border-radius: 33px;
+  content: '';
+  display: block;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  -webkit-transform: translate(-100%, 0) rotate(10deg);
+  transform: translate(-100%, 0) rotate(10deg);
+  -webkit-transform-origin: top left;
+  transform-origin: top left;
+  transition: 0.2s -webkit-transform ease-out;
+  transition: 0.2s transform ease-out;
+  transition: 0.2s transform ease-out, 0.2s -webkit-transform ease-out;
+  will-change: transform;
+  z-index: -1;
+}
+
+.land-button:hover::after {
+  -webkit-transform: translate(0, 0);
+  transform: translate(0, 0);
+}
+
+.land-button:hover {
+  background: #fff;
+  color: $blue;
+  will-change: transform;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  z-index: 1;
+  &--column{
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    & .button{
+      margin: 5px 0;
+    }
+  }
+  &--right {
+    justify-content: flex-end;
+  }
+  &--left {
+    justify-content: flex-start;
+  }
+  &--padding {
+    padding: 30px 0;
+  }
+  &--between{
+    justify-content: space-between;
+  }
+}
+
+.button {
+  position: relative;
+  display: flex;
+  padding: 10px 20px;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 100;
+  text-decoration: none;
+  border-radius: 5px;
+  color: $titleColor;
+  justify-content: center;
+  transition: 0.4s;
+  box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.2);
+  margin: 0 5px;
+  background-image: linear-gradient(#fff, #fff);
+  z-index: 100;
+  background-size: 100%;
+  &--font14{
+    font-size: 14px;
+  }
+  &:hover:before {
+    opacity: 1;
+  }
+  &:active:before {
+    opacity: 0;
+  }
+  &:hover {
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.4);
+    position: relative;
+    z-index: 100;
+    background-size: 100%;
+    color: $white;
+  }
+  &:before {
+    border-radius: inherit;
+    content: '';
+    display: block;
+    height: 100%;
+    width: 100%;
+    background-image: $gradientBlueDarkReversed;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    z-index: -100;
+    transition: opacity 0.4s ease-in-out;
+  }
+  &--iconed {
+    padding-left: 20px;
+  }
+  &--iconed i {
+    margin-right: 15px;
+  }
+  &--blue {
+    position: relative;
+    background-image: $gradientBlueDark;
+    z-index: 100;
+    background-size: 100%;
+    color: $white;
+    &:hover:before {
+      opacity: 1;
+    }
+    &:active:before {
+      opacity: 0;
+    }
+    &:before {
+      border-radius: inherit;
+      content: '';
+      display: block;
+      height: 100%;
+      width: 100%;
+      background-image: $gradientBlueDarkReversed;
+      position: absolute;
+      top: 0;
+      left: 0;
+      opacity: 0;
+      z-index: -100;
+      transition: opacity 0.4s ease-in-out;
+    }
+
+  }
+  &--red{
+    background: #e9610f;
+    color: $white;
+    &:hover {
+      box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.4);
+      position: relative;
+      z-index: 100;
+      background-size: 100%;
+      color: $white;
+    }
+    &:before {
+      border-radius: inherit;
+      content: '';
+      display: block;
+      height: 100%;
+      width: 100%;
+      background-image: $gradientBlueDarkReversed;
+      position: absolute;
+      top: 0;
+      left: 0;
+      opacity: 0;
+      z-index: -100;
+      transition: opacity 0.4s ease-in-out;
+    }
+  }
+  &--green{
+    background: #00bf00;
+    color: $white;
+    &:hover {
+      box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.4);
+      position: relative;
+      z-index: 100;
+      background-size: 100%;
+      color: $white;
+    }
+    &:before {
+      border-radius: inherit;
+      content: '';
+      display: block;
+      height: 100%;
+      width: 100%;
+      background-image: $gradientBlueDarkReversed;
+      position: absolute;
+      top: 0;
+      left: 0;
+      opacity: 0;
+      z-index: -100;
+      transition: opacity 0.4s ease-in-out;
+    }
+  }
+  &--block {
+    width: 100%;
+  }
+}
+
+
+.checkbox-label {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Hide the browser's default checkbox */
+.checkbox-label input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+/* Create a custom checkbox */
+.checkbox {
+  position: absolute;
+  top: calc(50% - 10px);
+  left: 0;
+  height: 20px;
+  width: 20px;
+  background-color: #eee;
+}
+
+/* On mouse-over, add a grey background color */
+.checkbox-label:hover input ~ .checkbox {
+  background-color: #ccc;
+}
+
+/* When the checkbox is checked, add a blue background */
+.checkbox-label input:checked ~ .checkbox {
+  background-color: #2196F3;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkbox:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the checkmark when checked */
+.checkbox-label input:checked ~ .checkbox:after {
+  display: block;
+}
+
+/* Style the checkmark/indicator */
+.checkbox-label .checkbox:after {
+  left: 7px;
+  top: 2px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.tabs-selector{
+  display: none;
+}
+
+.tabs-selector-button{
+  display: block;
+  margin: 10px 0;
+  max-width: 280px;
+}

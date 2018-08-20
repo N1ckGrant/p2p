@@ -1,0 +1,63 @@
+@import 'reset';
+@import 'utils';
+@import 'buttons';
+@import 'timeline';
+@import '../../node_modules/smart-grid/smart-grid';
+@import '../libs/slick/slick';
+@import '../libs/slick/slick-theme';
+@import 'owl.carousel';
+@import 'owl.theme.default';
+@import 'header';
+@import 'landing';
+@import 'animations';
+@import 'footer';
+@import 'registration/authorization';
+@import 'datepicker';
+@import 'faq';
+@import 'document_templates';
+@import 'profile';
+@import 'my_balance';
+@import 'from_css';
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown.active .dropdown-arrow{
+  transform: rotate(180deg);
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  min-width: 160px;
+  width: 100%;
+  z-index: 1;
+  margin: 0;
+  top: 35px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  border-radius: 5px;
+}
+
+.dropdown-content p.button{
+  margin: 0;
+  box-shadow: none !important;
+}
+
+.dropdown-content.active {
+  display: block;
+}
+
+.dropdown-arrowed{
+  position: relative;
+}
+
+
+.dropdown-arrow{
+  position: absolute;
+  top: calc(50% - 10px);
+  right: 10px;
+  font-size: 20px;
+}
+

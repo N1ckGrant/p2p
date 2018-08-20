@@ -1,0 +1,643 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>P2P_landing</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css"/>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css"/>
+
+
+    <link rel="stylesheet" href="css/libs.min.css">
+    <link rel="stylesheet" href="css/main.css">
+
+</head>
+
+<body>
+
+
+<section class="profile-page">
+    <!--mobile menu land-button-->
+    <div class="menu">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+    <!--mobile navigation-->
+    <div id="navigation" class="hidden">
+        <div class="mobile-nav">
+            <a href="#" class="nav__item nav__item--mobile">Инвестировать</a>
+            <a href="#" class="nav__item nav__item--mobile">Взять займ</a>
+            <a href="#" class="nav__item nav__item--mobile">О нас</a>
+            <a href="#" class="nav__item nav__item--mobile">Документы</a>
+            <a href="#" class="nav__item nav__item--mobile">Контакты</a>
+        </div>
+        <div class="toolbar-mobile">
+            <div class="login">
+                <a href="#" class="login__link sign-in">вход</a>
+            </div>
+        </div>
+    </div>
+    <section class="header-wrap">
+        <!--header-->
+        <header class="header container">
+            <!--logo-->
+            <a class="logo">
+                <div class="logo__img-wrap">
+                    <img src="assets/img/logo.png" class="logo__img"/>
+                </div>
+            </a>
+            <!--top navigation-->
+            <nav class="nav">
+                <a href="#" class="nav__item">Инвестировать</a>
+                <a href="#" class="nav__item">Взять займ</a>
+                <a href="#" class="nav__item">О нас</a>
+                <a href="#" class="nav__item">Документы</a>
+                <a href="#" class="nav__item">Контакты</a>
+            </nav>
+            <!--user registration and lang changing-->
+            <div class="toolbar">
+                <div class="login">
+                    <a href="#" class="land-button sign-in">вход</a>
+                </div>
+            </div>
+
+        </header>
+    </section>
+</section>
+
+
+<section class="profile-content-wrap">
+    <!--sidebar-->
+    <div class="profile-sidebar profile-bar-block profile-card profile-animate-left "
+         id="mySidebar ">
+        <div class="my_bar_box article">
+            <div class="my_sitebar_scroll" id="aside1">
+                <div class="sidebar-user-bar">
+                    <div class="sidebar-user-bar-img-wrap">
+                        <img src="assets/img/profile-icon.png" alt="" class="sidebar-user-bar-img">
+                        <p class="sidebar-user-bar__name">Essie Howell</p>
+                    </div>
+
+                    <div class="sidebar-user-bar-icon">
+                        <i class="fa fa-pencil" aria-hidden="true"></i>
+                    </div>
+                </div>
+
+                <div class="profile-sidebar-links" id="aside1">
+                    <div class="sidebar-links">
+                        <div class="sidebar-links-item">
+                            <a class="sidebar-link" href="#">
+                                <div class="sidebar-item-icon">
+                                    <i class="fa fa-th-large" aria-hidden="true"></i>
+                                </div>
+                                <div class="sidebar-item-link">Проекты</div>
+                                <div class="arrow-icons">
+                                    <i class="fa fa-caret-down arrow-icons-up" aria-hidden="true"></i>
+                                    <i class="fa fa-caret-up arrow-icons-down" aria-hidden="true"></i>
+                                </div>
+                            </a>
+                            <ul class="sub-links">
+                                <li><a class="sub-links-link" href="#">Мои проекты</a></li>
+                                <li><a class="sub-links-link" href="#">Все проекты</a></li>
+                                <li><a class="sub-links-link" href="#">Создать проект</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="sidebar-links-item">
+                            <a class="sidebar-link" href="#">
+                                <div class="sidebar-item-icon">
+                                    <i class="fa fa-credit-card-alt" aria-hidden="true"></i>
+                                </div>
+                                <div class="sidebar-item-link">Мой счет</div>
+                            </a>
+                        </div>
+
+                        <div class="sidebar-links-item">
+                            <a class="sidebar-link" href="#">
+                                <div class="sidebar-item-icon">
+                                    <i class="fa fa-tag" aria-hidden="true"></i>
+                                </div>
+                                <div class="sidebar-item-link">Предложения</div>
+                            </a>
+                        </div>
+
+                        <div class="sidebar-links-item">
+                            <a class="sidebar-link" href="#">
+                                <div class="sidebar-item-icon">
+                                    <i class="fa fa-file-text" aria-hidden="true"></i>
+                                </div>
+                                <div class="sidebar-item-link">Договоры</div>
+                            </a>
+                        </div>
+
+                        <div class="sidebar-links-item">
+                            <a class="sidebar-link" href="#">
+                                <div class="sidebar-item-icon">
+                                    <i class="fa fa-money" aria-hidden="true"></i>
+                                </div>
+                                <div class="sidebar-item-link">Кредит</div>
+                            </a>
+                        </div>
+                        <div class="sidebar-links-item">
+                            <a class="sidebar-link" href="#">
+                                <div class="sidebar-item-icon">
+                                    <i class="fa fa-history" aria-hidden="true"></i>
+                                </div>
+                                <div class="sidebar-item-link">История</div>
+                            </a>
+                        </div>
+                        <div class="sidebar-links-item">
+                            <a class="sidebar-link" href="#">
+                                <div class="sidebar-item-icon">
+                                    <i class="fa fa-tag" aria-hidden="true"></i>
+                                </div>
+                                <div class="sidebar-item-link">Уведомления<span class="notification-count">(3)</span></div>
+                            </a>
+                        </div>
+                        <div class="sidebar-links-item">
+                            <a class="sidebar-link" href="#">
+                                <div class="sidebar-item-icon">
+                                    <i class="fa fa-user" aria-hidden="true"></i>
+                                </div>
+                                <div class="sidebar-item-link">Профиль</div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="sidebar-links">
+                        <div class="sidebar-links-item">
+                            <a class="sidebar-link" href="#">
+                                <div class="sidebar-item-icon">
+                                    <i class="fa fa-sign-out" aria-hidden="true"></i>
+                                </div>
+                                <div class="sidebar-item-link">Выход</div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <!--content-->
+    <div class="profile-content" id="main">
+
+        <div class="profile-teal">
+
+
+            <div class="profile-top-bar">
+                <div class="profile-container">
+                    <h1 class="profile-title">Мой профиль</h1>
+                </div>
+                <div class="tabs buttons">
+                    <button class="tabs-item button button--font14" onclick="openCity('personalData')">Личные данные
+                    </button>
+                    <button class="tabs-item button button--font14" onclick="openCity('creditorData')">Данные
+                        кредитора
+                    </button>
+                    <button class="tabs-item button button--font14" onclick="openCity('confirmMobile')">Подт.
+                        Мобильного
+                    </button>
+                    <button class="tabs-item button button--font14" onclick="openCity('signatureData')">Данные о
+                        подписи
+                    </button>
+                    <button class="tabs-item button button--font14" onclick="openCity('changePassword')">Изменить
+                        пароль
+                    </button>
+                </div>
+            </div>
+            <div class="profile-tabs-content">
+                <div id="personalData" class="profile-tab">
+                    <div class="profile-user-data">
+                        <div class="profile-user-data-block">
+                            <div class="profile-user-avatar">
+                                <img src="assets/img/photo-icon.png" alt="" class="profile-user-photo-icon">
+                                <!-- Link to open the modal -->
+                                <a href="#"><img src="assets/img/no-photo-with-circle.png" alt=""
+                                                 class="profile-user-img"></a>
+                                <!-- Modal HTML embedded directly into document -->
+                                <div id="ex1" class="modal profile-photo-edit-modal">
+                                    <p class="profile-title">Редактировать фото</p>
+                                    <div class="profile-no-photo-edit">
+                                        <img src="assets/img/no-photo.png" alt="" class="profile-no-photo-edit-img">
+                                        <p class="profile-no-photo-edit-text">Перетащите фотографию на
+                                            данную область</p>
+                                    </div>
+                                    <div class="buttons">
+                                        <a href="" class="button button--blue">Сохранить</a>
+                                    </div>
+                                    <!--<a href="#" rel="modal:close">Close</a>-->
+                                </div>
+                            </div>
+                            <form class="user-form">
+                                <div class="user-form-content">
+                                    <div class="user-form-block">
+                                        <div class="user-form-item">
+                                            <label class="label">Фамилия</label>
+                                            <input type="text" class="input">
+                                        </div>
+                                        <div class="user-form-item">
+                                            <label class="label">Отчество</label>
+                                            <input type="text" class="input">
+                                        </div>
+                                        <div class="user-form-item">
+                                            <label class="label">Mail</label>
+                                            <input type="text" class="input">
+                                        </div>
+                                    </div>
+                                    <div class="user-form-block">
+                                        <div class="user-form-item">
+                                            <label class="label">Имя</label>
+                                            <input type="text" class="input">
+                                        </div>
+                                        <div class="user-form-item">
+                                            <label class="label">Дата рождения</label>
+                                            <input type="text" class="input">
+                                        </div>
+                                        <div class="user-form-item">
+                                            <label class="label">Телефон</label>
+                                            <input type="text" class="input">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="buttons buttons--padding">
+                                    <a href="" class="button button--blue">Сохранить</a>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div id="creditorData" class="profile-tab" style="display:none">
+                    <div class="tab-panel">
+                        <div class="box_menu_form ">
+                            <label for="">Форма предпринимательской деятельности</label>
+                            <select name="" id="select-doc">
+                                <option value="forma_one">Физическое лицо-предприниматель (ФЛП)</option>
+                                <option value="chp">Частное предприятие (ЧП)</option>
+                                <option value="ooo">Общество с ограниченной ответственностью (OOO)</option>
+                            </select>
+                        </div>
+                        <form class="box_content_forma profile-tab-select" id="forma_one" style="display: block">
+                            <div class="form-group">
+                                <label for="">Серия и номер паспорта</label><input class="input" type="text">
+                            </div>
+                            <div class="form-group">
+                                <label for="">Идентификационный код</label><input class="input" type="text">
+                            </div>
+                            <div class="form-group">
+                                <label for="">Свидетельство о регистрации</label><input class="input" type="text">
+                            </div>
+                            <div class="form-group">
+                                <label for="">Код ЕГРПОУ</label><input required class="input" type="text">
+                            </div>
+                            <botton class="button button--blue">сохранить</botton>
+                        </form>
+                        <form class="box_content_forma profile-tab-select" id="chp">
+                            <div class="form-group">
+                                <label for="">Код Е РПОУ</label><input class="input" type="text">
+                            </div>
+                            <div class="form-group">
+                                <label for="">Наименование организации (юр.лица) сокращенное</label><input class="input" type="text">
+                            </div>
+                            <div class="form-group">
+                                <label for="">Наименование организации (юр.лица) полное</label><input class="input" type="text">
+                            </div>
+                            <div class="form-group">
+                                <label for="">Форма собственности</label><input class="input" type="text">
+                            </div>
+                            <div class="form-group">
+                                <label for="">Основной вид деятельности</label><input class="input" type="text">
+                            </div>
+                            <div class="form-group">
+                                <label for="">Виды деятельности</label><textarea class="input" type="text"></textarea>
+                            </div>
+                            <div class="form-group">
+                                <label for="">Дата регистрации</label><input class="input" type="text">
+                            </div>
+                            <div class="form-group">
+                                <label for="">Юридический адрес</label><textarea class="input" type="text"></textarea>
+                            </div>
+                            <div class="form-group">
+                                <label for="">Руководитель организациид</label><input class="input" type="text">
+                            </div>
+                            <div class="form-group">
+                                <label for="">Размер уставного капитала</label><input class="input" type="text">
+                            </div>
+                            <div class="form-group">
+                                <label for="">Дата окончания формирования</label><input class="input" type="text">
+                            </div>
+                            <div class="form-group">
+                                <label for="">Учредители</label><textarea class="input" type="text"></textarea>
+                            </div>
+                            <div class="form-group">
+                                <label for="">Орган управления юр.лица</label><textarea class="input" type="text"></textarea>
+                            </div>
+                            <div class="form-group">
+                                <label for="">Статус</label><textarea class="input" type="text"></textarea>
+                            </div>
+                            <div class="form-group">
+                                <label for="">Индивидуальный налоговый номер</label><input class="input" type="text">
+                            </div>
+                            <div class="form-group">
+                                <label for="">Статус плательщика НДС</label><textarea class="input" type="text"></textarea>
+                            </div>
+                            <botton class="button button--blue">сохранить</botton>
+                        </form>
+                        <forma class="box_content_forma profile-tab-select" id="ooo">
+                            <div class="form-group">
+                                <label for="">Код Е РПОУ</label><input required class="input" type="text">
+                            </div>
+                            <div class="form-group">
+                                <label for="">Наименование организации (юр.лица) сокращенное</label><input class="input" type="text">
+                            </div>
+                            <div class="form-group">
+                                <label for="">Наименование организации (юр.лица) полное</label><input class="input" type="text">
+                            </div>
+                            <div class="form-group">
+                                <label for="">Форма собственности</label><input class="input" type="text">
+                            </div>
+                            <div class="form-group">
+                                <label for="">Основной вид деятельности</label><input class="input" type="text">
+                            </div>
+                            <div class="form-group">
+                                <label for="">Виды деятельности</label><textarea class="input" type="text"></textarea>
+                            </div>
+                            <div class="form-group">
+                                <label for="">Дата регистрации</label><input class="input" type="text">
+                            </div>
+                            <div class="form-group">
+                                <label for="">Юридический адрес</label><textarea class="input" type="text"></textarea>
+                            </div>
+                            <div class="form-group">
+                                <label for="">Руководитель организациид</label><input class="input" type="text">
+                            </div>
+                            <div class="form-group">
+                                <label for="">Размер уставного капитала</label><input class="input" type="text">
+                            </div>
+                            <div class="form-group">
+                                <label for="">Дата окончания формирования</label><input class="input" type="text">
+                            </div>
+                            <div class="form-group">
+                                <label for="">Учредители</label><textarea class="input" type="text"></textarea>
+                            </div>
+                            <div class="form-group">
+                                <label for="">Орган управления юр.лица</label><textarea class="input" type="text"></textarea>
+                            </div>
+                            <div class="form-group">
+                                <label for="">Статус</label><textarea class="input" type="text"></textarea>
+                            </div>
+                            <div class="form-group">
+                                <label for="">Индивидуальный налоговый номер</label><input required class="input" type="text">
+                            </div>
+                            <div class="form-group">
+                                <label for="">Статус плательщика НДС</label><textarea class="input" type="text"></textarea>
+                            </div>
+                            <botton class="button button--blue" type="submit">сохранить</botton>
+                        </forma>
+                    </div>
+                </div>
+                <div id="confirmMobile" class="profile-tab" style="display:none">
+                    <div class="mob-confirm">
+                        <div class="mob-confirm-info">
+                            <img src="assets/img/info.png" alt="" class="mob-confirm-info-img">
+                        </div>
+                        <form class="mob-confirm-block">
+                            <ul class="mob-confirm-ul">
+                                <li class="mob-confirm-li">Нажмите кнопку “Отправить SMS”</li>
+                                <li class="mob-confirm-li">На Ваш номер <span
+                                        class="color-blue">+38 095 888 33 66</span> прийдет SMS, содержащее код,
+                                    состоящий из шести цифр
+                                </li>
+                                <li class="mob-confirm-li">В целях Безопасности код действителен только 15 минут.
+                                    Поэтому в течении этого времени введите
+                                    цифры кода в поле “Код” и нажите кнопку “Подтвердить номер”
+                                </li>
+                            </ul>
+                            <div class="buttons buttons--left buttons--padding">
+                                <button class="button button--blue">Отправить SMS</button>
+                            </div>
+                            <div class="input-wrap">
+                                <label class="label label--require">Код</label>
+                                <input type="text" class="input">
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div id="signatureData" class="profile-tab" style="display:none">
+                    <div class="signature-info">
+                        <div class="signature-info-info">
+                            <img src="assets/img/signature.png" alt="" class="signature-info-info-img">
+                        </div>
+                        <div class="signature-info-block">
+                            <div class="input-wrap">
+                                <label class="label label--require">Данные о подписи</label>
+                            </div>
+                            <p class="signature-info-text">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis Lorem ipsum
+                                dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
+                                et dolore magna aliqua. Ut enim ad minim veniam, quis Lorem ipsum dolor sit amet,
+                                consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+                                aliqua. Ut enim ad minim veniam, quis
+                            </p>
+                            <div class="buttons buttons--padding">
+                                <a href="#">
+                                    <button class="button button--blue">Внести подпись</button>
+                                </a>
+                            </div>
+                            <!-- Modal HTML embedded directly into document -->
+                            <div id="ex2" class="modal signature-confirm-modal">
+                                <div class="signature-confirm-head">
+                                    <h3 class="signature-confirm-head-title profile-title">Подтверждение инвестирования</h3>
+                                    <p class="signature-confirm-head-text">Подтверждая заявку вы соглашаетесь с условиями обработки персональных данных  и еще рыбный текст и также внесите свою подпись для подтверждения</p>
+                                    <p class="change-pass-text">Внесите подпись</p>
+                                </div>
+                                <form class="signature-confirm-content">
+                                    <div class="signature-modal-content">
+                                        <img src="assets/img/signature-white.png" alt="" class="signature-modal-img">
+                                    </div>
+                                    <div class="buttons buttons--between signature-checkbox-box">
+                                        <div class="checkbox-wrap">
+
+                                            <label for="234" class="label checkbox-label">Подтверждаю обработку моих персональных данных
+                                                <input id="234" type="checkbox">
+                                                <span class="checkbox"></span>
+                                                </label>
+                                        </div>
+                                        <button class="button">Очистить</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="changePassword" class="profile-tab" style="display:none">
+                    <form class="change-pass">
+                        <div class="reg-input-wrap">
+                            <input type="text" class="reg-input" readonly value="email@gmail.com"
+                                   style="width: calc(50% - 15px)">
+                        </div>
+                        <div class="inputs-wrap inputs-wrap--flex mt-15px">
+                            <div class="input-wrap mr-15px">
+                                <label class="label label--require">Новый пароль</label>
+                                <input type="text" class="input">
+                            </div>
+                            <div class="input-wrap">
+                                <label class="label label--require">Повторите пароль</label>
+                                <input type="text" class="input">
+                            </div>
+                        </div>
+                        <div class="buttons buttons--padding">
+                            <button class="button button--blue">Сохранить</button>
+                        </div>
+                    </form>
+                    <p class="change-pass-text">
+                        Завершите регистрацию Пользователями платформы и участниками договоров займа могут быть
+                        только идентифицированные нами лица. Для этого, пожалуйста, заполните данные кредитора и
+                        подтвердите
+                        ваш номер мобильного телефона. После этого вам станут доступны пополнение счёта на платформе и
+                        подписание предложений о кредитовании.
+                    </p>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+<footer class="footer-wrap">
+    <div class="container">
+        <div class="footer">
+            <div class="footer-block footer-block--logo">
+                <!--logo-->
+                <a class="logo">
+                    <div class="logo__img-wrap">
+                        <img src="assets/img/logo.png" class="logo__img"/>
+                    </div>
+                </a>
+                <p class="footer-block__text">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+                    labore et
+                    dolore magna Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                    incididunt ut
+                    labore et dolore magna
+                </p>
+            </div>
+            <div class="footer-block footer-block--list">
+                <ul class="footer-block__list">
+                    <li class="footer-block__list-item">Главная</li>
+                    <li class="footer-block__list-item">Проекты</li>
+                    <li class="footer-block__list-item">Инвестировать</li>
+                    <li class="footer-block__list-item">Взять кредит</li>
+                    <li class="footer-block__list-item">Новости</li>
+                    <li class="footer-block__list-item">FAQ</li>
+                </ul>
+            </div>
+            <div class="footer-block footer-block--list">
+                <ul class="footer-block__list">
+                    <li class="footer-block__list-item">Документы</li>
+                    <li class="footer-block__list-item">Отзывы</li>
+                    <li class="footer-block__list-item">О компании</li>
+                    <li class="footer-block__list-item">Как это работает?</li>
+                    <li class="footer-block__list-item">Преимущества</li>
+                    <li class="footer-block__list-item">Контакты</li>
+                </ul>
+            </div>
+            <div class="footer-block footer-block--contacts">
+                <address class="">
+                    <p class="footer-block__contact">Контакты</p>
+                    <p class="footer-block__contact">Email: Infomail@gmail.com</p>
+                    <p class="footer-block__contact">Тел. 0800 888 99 88</p>
+                    <p class="footer-block__contact">Киев. Ул. Дом</p>
+                </address>
+                <ul class="socials">
+                    <li class="socials__item"><i class="fa fa-twitter" aria-hidden="true"></i></li>
+                    <li class="socials__item"><i class="fa fa-instagram" aria-hidden="true"></i></li>
+                    <li class="socials__item"><i class="fa fa-facebook" aria-hidden="true"></i></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p class="copyright-text">Cоpyright 2018</p>
+    </div>
+</footer>
+</section>
+
+
+<script src="https://cdn.jsdelivr.net/scrollreveal.js/3.3.1/scrollreveal.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js"></script>
+<script src="https://cdn.jsdelivr.net/parallax.js/1.4.2/parallax.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.js"></script>
+<script src="js/libs.min.js"></script>
+<script src="js/common.js"></script>
+<script src="js/myscript.js"></script>
+
+<script>
+    var sidebarStatus = 'closed';
+    var selectedNode;
+
+    function profile_open() {
+        // document.getElementById("main").style.marginLeft = "25%";
+        document.getElementsByClassName("profile-bar-item")[0].style.display = "block";
+        document.getElementById("mySidebar").style.width = "20%";
+        document.getElementById("mySidebar").classList.add('active');
+        document.getElementById("mySidebar").style.display = "flex";
+        document.getElementById("openNav").style.display = 'none';
+        sidebarStatus = 'opened';
+    }
+
+    function profile_close() {
+        document.getElementsByClassName("profile-bar-item")[0].style.display = "none";
+        // document.getElementById("main").style.marginLeft = "0%";
+        document.getElementById("mySidebar").style.width = "60px";
+        document.getElementById("mySidebar").classList.remove('active');
+        document.getElementById("mySidebar").style.display = "flex";
+        document.getElementById("openNav").style.display = "block";
+        sidebarStatus = 'closed';
+        if (selectedNode) {
+            selectedNode.removeClass('selected')
+        }
+    }
+
+
+
+
+    function openCity(id) {
+        var i;
+        var x = document.getElementsByClassName("profile-tab");
+        for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";
+        }
+        document.getElementById(id).style.display = "block";
+    }
+
+
+
+    function openModal1() {
+        $("#ex1").modal({
+            closeClass: 'icon-remove',
+            closeText: '<i class="fa fa-close" aria-hidden="true"></i>'
+        });
+    }
+
+    $("#ex2").modal({
+        closeClass: 'icon-remove',
+        closeText: '<i class="fa fa-close" aria-hidden="true"></i>'
+    });
+
+</script>
+</body>
+
+</html>
